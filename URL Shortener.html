@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="URL.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔗Smart URL Shortener</h1>
+    <p class="subtitle">Shrink long URLs for easier sharing</p>
+
+    <div class="url-form">
+      <input type="text" id="longUrl" placeholder="Paste your long URL here..." />
+      <button onclick="shortenURL()">Shorten</button>
+    </div>
+
+    <div class="result" id="resultBox" style="display: none;">
+      <p>Your short URL:</p>
+      <div class="short-url-box">
+        <input type="text" id="shortUrl" readonly />
+        <button onclick="copyURL()">📋 Copy</button>
+      </div>
+    </div>
+    <div class="toast" id="toast">Copied to clipboard!</div>
+  </div>
+  <script src="URLshrtr.js"></script>
+</body>
+</html>
